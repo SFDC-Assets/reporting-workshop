@@ -1,0 +1,10 @@
+{
+    "orgName": "workshops",
+    "edition": "Enterprise",
+    "description": "lightning reporting",
+    "orgPreferences": {
+        "enabled": [
+            "S1DesktopEnabled"
+        ]
+    }
+}
