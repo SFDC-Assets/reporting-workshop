@@ -4,20 +4,25 @@ sfdx shane:github:package:install -g mshanemc -r volunteering-base-pkg
 
 sfdx force:source:push
 
-sfdx force:user:create -f config/userDef/user1.json &
-sfdx force:user:create -f config/userDef/user2.json &
-sfdx force:user:create -f config/userDef/user3.json &
-sfdx force:user:create -f config/userDef/user4.json &
-sfdx force:user:create -f config/userDef/user5.json &
-sfdx force:user:create -f config/userDef/user6.json &
-sfdx force:user:create -f config/userDef/user7.json &
-sfdx force:user:create -f config/userDef/user8.json &
-sfdx force:user:create -f config/userDef/user9.json &
-sfdx force:user:create -f config/userDef/user10.json &
-sfdx force:user:create -f config/userDef/user11.json &
-sfdx force:user:create -f config/userDef/user12.json &
-sfdx force:user:create -f config/userDef/user13.json &
-sfdx force:user:create -f config/userDef/user14.json &
+sfdx force:user:create -f config/userDef/user1.json
+sfdx force:user:create -f config/userDef/user2.json
+sfdx force:user:create -f config/userDef/user3.json
+sfdx force:user:create -f config/userDef/user4.json
+sfdx force:user:create -f config/userDef/user5.json
+sfdx force:user:create -f config/userDef/user6.json
+sfdx force:user:create -f config/userDef/user7.json
+sfdx force:user:create -f config/userDef/user8.json
+sfdx force:user:create -f config/userDef/user9.json
+sfdx force:user:create -f config/userDef/user10.json
+sfdx force:user:create -f config/userDef/user11.json
+sfdx force:user:create -f config/userDef/user12.json
+sfdx force:user:create -f config/userDef/user13.json
+sfdx force:user:create -f config/userDef/user14.json
+
+sfdx force:data:record:update -s User -w "FirstName='User' LastName='User'" -v "FirstName='Scott' LastName='Konkol' Department='Marketing'"
+sfdx force:data:record:update -s User -w "FirstName='Security' LastName='User'" -v "FirstName='Angelos' LastName='Kottas' Department='Sales'"
+sfdx force:data:record:update -s User -w "FirstName='Integration' LastName='User'" -v "FirstName='Rachel' LastName='Beard' Department='Customer Support'"
+
 
 sfdx force:user:permset:assign -n VolunteeringApp
 sfdx force:user:permset:assign -n VolunteeringAppExtensions
