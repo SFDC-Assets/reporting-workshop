@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Volunteer_Events__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Volunteer_Events__r.Volunteers__r$Name</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.Volunteer_Events__r$Hours__c</field>
+    </columns>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Volunteer_Events__r.Volunteers__r$CreatedBy</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Hours by Volunteer</name>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>Volunteering_Reporting__c</reportType>
+    <scope>user</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>
