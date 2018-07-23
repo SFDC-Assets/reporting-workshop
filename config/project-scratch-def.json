@@ -1,7 +1,8 @@
 {
     "orgName": "workshops",
-    "edition": "Enterprise",
+    "sourceOrg": "00D6A000001h6L5UAI",
     "description": "lightning reporting",
+    "features": [ "ExpandedSourceTracking" ],
     "orgPreferences": {
         "enabled": [
             "S1DesktopEnabled"
