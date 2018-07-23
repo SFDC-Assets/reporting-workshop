@@ -390,6 +390,11 @@
             <field>Status__c</field>
             <table>Account.Volunteer_Events__r.Volunteers__r</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CreatedBy.Department</field>
+            <table>Account.Volunteer_Events__r.Volunteers__r</table>
+        </columns>
         <masterLabel>Volunteers</masterLabel>
     </sections>
 </ReportType>

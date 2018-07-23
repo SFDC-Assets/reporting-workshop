@@ -66,8 +66,8 @@ public with sharing class dataSetup {
         }
 
         for (Volunteer_Event__c event: events){
-            // pick a number between 3 and 7
-            Integer volunteerCount = 3 + integer.valueOf(Math.floor(Math.random()*4));
+            // pick a number between 1 and 7
+            Integer volunteerCount = 1 + integer.valueOf(Math.floor(Math.random()*4));
             for (integer k=0; k<volunteerCount; k++){
                 integer UserIndex = integer.valueOf(Math.floor(Math.random()*volunteerIds.size()));
                 Volunteers__c vol = new Volunteers__c();
