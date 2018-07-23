@@ -53,17 +53,26 @@ public with sharing class dataSetup {
         insert events;
 
         // grab the users
-        list<user> users = [select id from user];
+        list<user> users = [select id from user where usertype = 'Standard'];
         list<Volunteers__c> vols = new list<Volunteers__c>();
+
+        list<id> volunteerIds = new list<id>();
+        for (user u:users){
+            // 1 to 5 distribution of likelihood to volunteer
+            integer propensity = integer.valueOf(Math.floor(Math.random()*5));
+            for (integer k=0; k<propensity; k++){
+                volunteerIds.add(u.Id);
+            }
+        }
 
         for (Volunteer_Event__c event: events){
             // pick a number between 3 and 7
             Integer volunteerCount = 3 + integer.valueOf(Math.floor(Math.random()*4));
             for (integer k=0; k<volunteerCount; k++){
-                integer UserIndex = integer.valueOf(Math.floor(Math.random()*users.size()));
+                integer UserIndex = integer.valueOf(Math.floor(Math.random()*volunteerIds.size()));
                 Volunteers__c vol = new Volunteers__c();
                 vol.Event__c = event.Id;
-                vol.CreatedById = users[UserIndex].Id;
+                vol.CreatedById = volunteerIds[UserIndex];
                 if (event.End__c < System.now()){
                     vol.Status__c = 'Completed';
                 } else {
