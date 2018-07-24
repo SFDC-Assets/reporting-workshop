@@ -59,7 +59,7 @@ public with sharing class dataSetup {
         list<id> volunteerIds = new list<id>();
         for (user u:users){
             // 2 to 7 distribution of likelihood to volunteer
-            integer propensity = 2 + integer.valueOf(Math.floor(Math.random()*5));
+            integer propensity = 1 + integer.valueOf(Math.floor(Math.random()*5));
             for (integer k=0; k<propensity; k++){
                 volunteerIds.add(u.Id);
             }

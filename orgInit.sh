@@ -35,6 +35,13 @@ sfdx force:user:create -f config/userDef/user29.json
 sfdx force:user:create -f config/userDef/user30.json
 sfdx force:user:create -f config/userDef/user31.json
 sfdx force:user:create -f config/userDef/user32.json
+sfdx force:user:create -f config/userDef/user33.json
+sfdx force:user:create -f config/userDef/user34.json
+sfdx force:user:create -f config/userDef/user35.json
+sfdx force:user:create -f config/userDef/user36.json
+sfdx force:user:create -f config/userDef/user37.json
+sfdx force:user:create -f config/userDef/user38.json
+sfdx force:user:create -f config/userDef/user39.json
 
 sfdx force:data:record:update -s User -w "FirstName='User' LastName='User'" -v "FirstName='Awesome' LastName='Admin' Department='Marketing'"
 sfdx force:data:record:update -s User -w "FirstName='Security' LastName='User'" -v "FirstName='Angelos' LastName='Kottas' Department='Sales'"
