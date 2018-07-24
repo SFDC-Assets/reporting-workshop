@@ -11,13 +11,16 @@
     </columns>
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
-        <field>Account.Volunteer_Events__r$Hours__c</field>
+        <field>Account.Volunteer_Events__r.Volunteers__r$Hours__c</field>
     </columns>
     <format>Summary</format>
     <groupingsDown>
+        <aggregateType>Sum</aggregateType>
         <dateGranularity>Day</dateGranularity>
         <field>Account.Volunteer_Events__r.Volunteers__r$CreatedBy</field>
-        <sortOrder>Asc</sortOrder>
+        <sortByName>Account.Volunteer_Events__r.Volunteers__r$Hours__c</sortByName>
+        <sortOrder>Desc</sortOrder>
+        <sortType>Aggregate</sortType>
     </groupingsDown>
     <name>Hours by Volunteer</name>
     <params>

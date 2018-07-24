@@ -13,11 +13,11 @@
         <field>Account.Volunteer_Events__r.Volunteers__r$CreatedBy.Department</field>
     </columns>
     <columns>
-        <aggregateTypes>Sum</aggregateTypes>
-        <field>Account.Volunteer_Events__r$Hours__c</field>
+        <field>Account.Volunteer_Events__r.Volunteers__r$CreatedBy</field>
     </columns>
     <columns>
-        <field>Account.Volunteer_Events__r.Volunteers__r$CreatedBy</field>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.Volunteer_Events__r.Volunteers__r$Hours__c</field>
     </columns>
     <format>Tabular</format>
     <name>Department Volunteering</name>

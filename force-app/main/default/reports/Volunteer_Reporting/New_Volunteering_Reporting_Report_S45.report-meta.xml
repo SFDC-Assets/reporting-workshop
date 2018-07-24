@@ -8,7 +8,7 @@
     </columns>
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
-        <field>Account.Volunteer_Events__r$Hours__c</field>
+        <field>Account.Volunteer_Events__r.Volunteers__r$Hours__c</field>
     </columns>
     <format>Summary</format>
     <groupingsDown>

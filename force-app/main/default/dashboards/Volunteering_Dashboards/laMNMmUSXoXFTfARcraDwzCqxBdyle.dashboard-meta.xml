@@ -15,11 +15,11 @@
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <chartSummary>
                     <aggregate>Sum</aggregate>
-                    <column>Account.Volunteer_Events__r$Hours__c</column>
+                    <column>Account.Volunteer_Events__r.Volunteers__r$Hours__c</column>
                 </chartSummary>
                 <componentType>Metric</componentType>
                 <displayUnits>Integer</displayUnits>
-                <header>Total Volunteer Hours</header>
+                <header>Volunteering with Organizations</header>
                 <indicatorBreakpoint1>33.0</indicatorBreakpoint1>
                 <indicatorBreakpoint2>67.0</indicatorBreakpoint2>
                 <indicatorHighColor>#00716B</indicatorHighColor>
@@ -40,10 +40,10 @@
                 <chartSummary>
                     <aggregate>Sum</aggregate>
                     <axisBinding>y</axisBinding>
-                    <column>Account.Volunteer_Events__r$Hours__c</column>
+                    <column>Account.Volunteer_Events__r.Volunteers__r$Hours__c</column>
                 </chartSummary>
                 <componentType>Donut</componentType>
-                <displayUnits>Auto</displayUnits>
+                <displayUnits>Integer</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
                 <enableHover>false</enableHover>
@@ -70,16 +70,16 @@
                 <chartSummary>
                     <aggregate>Sum</aggregate>
                     <axisBinding>y</axisBinding>
-                    <column>Account.Volunteer_Events__r$Hours__c</column>
+                    <column>Account.Volunteer_Events__r.Volunteers__r$Hours__c</column>
                 </chartSummary>
                 <componentType>Bar</componentType>
-                <displayUnits>Auto</displayUnits>
+                <displayUnits>Integer</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
                 <enableHover>false</enableHover>
                 <expandOthers>false</expandOthers>
                 <groupingColumn>Account$Name</groupingColumn>
-                <header>Hours by Organization</header>
+                <header>Volunteering with Organizations</header>
                 <legendPosition>Bottom</legendPosition>
                 <report>Volunteer_Reporting/New_Volunteering_Reporting_Report_S45</report>
                 <showPercentage>false</showPercentage>
@@ -116,7 +116,7 @@
     </dashboardGridLayout>
     <dashboardType>SpecifiedUser</dashboardType>
     <isGridLayout>true</isGridLayout>
-    <runningUser>test-jf5tax5mtrbs@example.com</runningUser>
+    <runningUser>test-mxo4rglct3jf@example.com</runningUser>
     <textColor>#000000</textColor>
     <title>Volunteering Dashboard</title>
     <titleColor>#000000</titleColor>
