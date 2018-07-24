@@ -49,6 +49,10 @@
         <field>Volunteers__c.Status__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <readable>true</readable>
+        <field>User.Power_of_One__c</field>
+    </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
     <label>VolunteeringAppExtensions</label>
     <objectPermissions>

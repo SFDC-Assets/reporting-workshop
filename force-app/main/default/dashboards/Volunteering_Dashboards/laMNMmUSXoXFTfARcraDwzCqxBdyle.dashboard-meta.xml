@@ -14,7 +14,8 @@
             <dashboardComponent>
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <chartSummary>
-                    <column>RowCount</column>
+                    <aggregate>Sum</aggregate>
+                    <column>Account.Volunteer_Events__r$Hours__c</column>
                 </chartSummary>
                 <componentType>Metric</componentType>
                 <displayUnits>Integer</displayUnits>
@@ -108,14 +109,14 @@
                 <sortBy>RowValueDescending</sortBy>
             </dashboardComponent>
             <rowIndex>2</rowIndex>
-            <rowSpan>7</rowSpan>
+            <rowSpan>15</rowSpan>
         </dashboardGridComponents>
         <numberOfColumns>9</numberOfColumns>
         <rowHeight>80</rowHeight>
     </dashboardGridLayout>
     <dashboardType>SpecifiedUser</dashboardType>
     <isGridLayout>true</isGridLayout>
-    <runningUser>test-fytbolzfg1xp@example.com</runningUser>
+    <runningUser>test-jf5tax5mtrbs@example.com</runningUser>
     <textColor>#000000</textColor>
     <title>Volunteering Dashboard</title>
     <titleColor>#000000</titleColor>

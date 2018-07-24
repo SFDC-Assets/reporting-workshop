@@ -10,27 +10,28 @@
         <field>Account.Volunteer_Events__r.Volunteers__r$Name</field>
     </columns>
     <columns>
+        <field>Account.Volunteer_Events__r.Volunteers__r$CreatedBy.Department</field>
+    </columns>
+    <columns>
         <aggregateTypes>Sum</aggregateTypes>
         <field>Account.Volunteer_Events__r$Hours__c</field>
     </columns>
-    <format>Summary</format>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
+    <columns>
         <field>Account.Volunteer_Events__r.Volunteers__r$CreatedBy</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
-    <name>Hours by Volunteer</name>
+    </columns>
+    <format>Tabular</format>
+    <name>Department Volunteering</name>
     <params>
         <name>co</name>
-        <value>0</value>
+        <value>1</value>
     </params>
     <reportType>Volunteering_Reporting__c</reportType>
-    <scope>organization</scope>
-    <showDetails>false</showDetails>
-    <showGrandTotal>false</showGrandTotal>
+    <scope>user</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>Account$CreatedDate</dateColumn>
-        <interval>INTERVAL_CUSTOM</interval>
+        <interval>INTERVAL_CURRENT</interval>
     </timeFrameFilter>
 </Report>
