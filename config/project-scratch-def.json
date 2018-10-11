@@ -1,8 +1,7 @@
 {
     "orgName": "workshops",
-    "sourceOrg": "00D6A000001h6L5UAI",
+    "template": "0TT6A000006BlTd",
     "description": "lightning reporting",
-    "features": [ "ExpandedSourceTracking" ],
     "orgPreferences": {
         "enabled": [
             "S1DesktopEnabled"

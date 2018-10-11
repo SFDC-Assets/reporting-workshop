@@ -1,5 +1,7 @@
 sfdx force:org:create -f config/project-scratch-def.json -s -a reporting -d 1
 
+# sfdx force:data:record:create -s ContentWorkspace -v "Name='Asset Library' DeveloperName=sfdx_asset_company_assets"
+
 sfdx shane:github:package:install -g mshanemc -r volunteering-base-pkg
 
 sfdx force:source:push
@@ -54,5 +56,6 @@ sfdx force:apex:execute -f scripts/setup.cls
 
 # one more user who doesn't volunteer
 sfdx force:user:create -f config/userDef/user15.json
+sfdx shane:org:reauth --requirecustomdomain
 
 sfdx force:org:open
