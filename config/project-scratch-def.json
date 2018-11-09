@@ -2,10 +2,10 @@
     "orgName": "workshops",
     "template": "0TT6A000006BlTd",
     "description": "lightning reporting",
-    "orgPreferences": {
-        "enabled": [
-            "S1DesktopEnabled"
-        ],
-        "disabled": ["S1EncryptedStoragePref2"]
+    "settings": {
+        "orgPreferenceSettings": {
+            "s1DesktopEnabled": true,
+            "s1EncryptedStoragePref2": false
+        }
     }
 }
