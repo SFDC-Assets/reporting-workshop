@@ -56,6 +56,6 @@ sfdx force:apex:execute -f scripts/setup.cls
 
 # one more user who doesn't volunteer
 sfdx force:user:create -f config/userDef/user15.json
-sfdx shane:org:reauth --requirecustomdomain
+sfdx shane:org:reauth --requirecustomdomain --json
 
 sfdx force:org:open
