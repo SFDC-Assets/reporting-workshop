@@ -1,11 +1,14 @@
 {
-    "orgName": "workshops",
-    "template": "0TT6A000006BlTd",
-    "description": "lightning reporting",
-    "settings": {
-        "orgPreferenceSettings": {
-            "s1DesktopEnabled": true,
-            "s1EncryptedStoragePref2": false
-        }
+  "orgName": "workshops",
+  "adminEmail": "shane@mailinator.com",
+  "template": "0TT6A000006BlTd",
+  "description": "lightning reporting",
+  "settings": {
+    "lightningExperienceSettings": {
+      "enableS1DesktopEnabled": true
+    },
+    "mobileSettings": {
+      "enableS1EncryptedStoragePref2": false
     }
+  }
 }
