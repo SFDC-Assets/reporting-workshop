@@ -1,5 +1,5 @@
 # Create the demo org
-sf demoutil org create scratch -f config/project-scratch-def.json -d 1 -s -p reporting -e reporting.demo
+sf demoutil org create scratch -f config/project-scratch-def.json -d 1 -s -p reporting -e reporting.workshop
 
 # sfdx force:data:record:create -s ContentWorkspace -v "Name='Asset Library' DeveloperName=sfdx_asset_company_assets"
 
